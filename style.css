@@ -957,3 +957,69 @@ body {
     font-size: 13px;
     color: #a0aab2;
 }
+
+/* ======================================================== */
+/* ------------- MOBILE RESPONSIVENESS (MEDIA QUERIES) ---- */
+/* ======================================================== */
+
+
+@media (max-width: 991px) {
+    .header { padding: 15px 5%; }
+    section { padding: 80px 5% 50px; }
+    .Home-content h1 { font-size: 45px; }
+    .sub-title { font-size: 50px; }
+}
+
+
+@media (max-width: 768px) {
+    
+    .header { flex-direction: column; padding: 15px 5%; gap: 15px; }
+    .navbar { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .navbar a { margin-left: 0; font-size: 14px; }
+
+    
+    .sub-title { font-size: 35px; margin-bottom: 30px; }
+    .section-description { font-size: 14px; margin-bottom: 40px; }
+
+   
+    .Home { height: auto; padding-top: 180px; overflow: visible; }
+    .home-main-wrapper { flex-direction: column-reverse; text-align: center; gap: 50px; }
+    .Home-content h1 { font-size: 35px; }
+    .Home-content h3 { font-size: 20px; }
+    .home-scl { justify-content: center; }
+    .action-buttons { justify-content: center; }
+    
+   
+    .home-img, .glowing-shape, .about-glowing-ring { width: 280px; height: 280px; margin: 0 auto; }
+    
+ 
+    .stats-banner { position: relative; bottom: auto; left: auto; transform: none; width: 100%; margin-top: 50px; flex-direction: column; gap: 15px; border-radius: 20px; padding: 30px 20px; border-bottom: 1px solid rgba(0, 238, 255, 0.3); }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 15px; justify-content: center; width: 100%; }
+    .stat-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    /* About Section */
+    .about-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+    .about-text-content .sub-title { text-align: center !important; }
+    .about-info-grid { grid-template-columns: 1fr; }
+
+    /* Education Section */
+    .timeline-box { padding-left: 20px; }
+    .timeline-dot { left: -29px; }
+
+    
+    .services-grid, .projects-grid, .cert-grid { grid-template-columns: 1fr; }
+
+    /* Skills Section */
+    .skills-grid-container { flex-direction: column; gap: 30px; }
+    .radial-grid { grid-template-columns: 1fr; } 
+
+    /* Contact Section */
+    .contact-wrapper { flex-direction: column; padding: 30px 20px; }
+    .input-box { flex-direction: column; gap: 20px; }
+
+    /* Floating Buttons Phone */
+    .float-btn { width: 45px; height: 45px; font-size: 24px; right: 1rem; }
+    .top { right: 1rem; bottom: 1.5rem; }
+    .float-whatsapp { bottom: 5rem; }
+    .float-call { bottom: 8.5rem; }
+}
