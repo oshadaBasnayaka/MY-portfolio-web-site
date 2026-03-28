@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Projects | Oshada Basnayake</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Only this page for CSS */
+        .project-details-section {
+            padding: 120px 10% 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .back-btn {
+            align-self: flex-start;
+            margin-bottom: 30px;
+            color: #00eeff;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: 0.3s;
+        }
+        .back-btn:hover { transform: translateX(-5px); text-shadow: 0 0 10px #00eeff; }
+
+        .detailed-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .project-card-modern {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 238, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            transition: 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card-modern:hover {
+            transform: translateY(-15px);
+            border-color: #00eeff;
+            box-shadow: 0 15px 40px rgba(0, 238, 255, 0.2);
+        }
+
+        .project-image { width: 100%; height: 220px; overflow: hidden; }
+        .project-image img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; }
+        .project-card-modern:hover .project-image img { transform: scale(1.1); }
+
+        .project-info { padding: 25px 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .project-info h4 { color: #fff; font-size: 22px; margin-bottom: 10px; }
+        .project-info p { color: #a0aab2; font-size: 14px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; text-align: justify; }
+        
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+        .tech-stack span { font-size: 12px; color: #00eeff; background: rgba(0, 238, 255, 0.1); padding: 5px 12px; border-radius: 20px; border: 1px solid rgba(0, 238, 255, 0.3); }
+
+        .project-links-modern { display: flex; gap: 15px; }
+        .project-links-modern a { display: inline-flex; align-items: center; gap: 6px; color: #fff; font-size: 14px; text-decoration: none; transition: 0.3s; }
+        .project-links-modern a i { font-size: 18px; color: #00eeff; }
+        .project-links-modern a:hover { color: #00eeff; text-shadow: 0 0 10px rgba(0, 238, 255, 0.5); }
+    </style>
+</head>
+<body>
+
+    <section class="project-details-section">
+        
+        <a href="index.html#Project" class="back-btn"><i class='bx bx-left-arrow-alt'></i> Back to Portfolio</a>
+        
+        <h1 class="sub-title">Web Development <span>Projects</span></h1>
+        
+        <div class="detailed-projects-grid">
+            
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 115504.png" alt="My Portfolio Website"></div>
+                <div class="project-info">
+                    <h4>Personal Portfolio Website</h4>
+                    <p>A fully responsive, modern glassmorphism portfolio designed to showcase my skills, educational background, and recent projects.</p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="https://oshadabasnayaka.github.io/MY-portfolio-web-site/"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/MY-portfolio-web-site.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-26 134506.png" alt="AI-Powered Resume Analyzer"></div>
+                <div class="project-info">
+                    <h4>AI-Powered Resume Analyzer</h4>
+                    <p>An intelligent web application that parses resumes and matches them with job descriptions using advanced AI and machine learning algorithms.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>AI/ML</span>
+                        <span>UI/UX</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/AI-Powered-Resume-Analyzer.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 132412.png" alt="Bid2Save Insights Oracle System"></div>
+                <div class="project-info">
+                    <h4>Bid2Save Insights Oracle System</h4>
+                    <p>The project is based on the "Machine Learning Approach to Personality Prediction" framework, which aims to create an objective measure for analysis of an individual’s behavior.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>AI/ML</span>
+                        <span>Flask</span>
+                        
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#" target="_blank"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/Bid2Save-Insights-Oracle-System.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 121435.png" alt="Pahana Edu Billing System"></div>
+                <div class="project-info">
+                    <h4>Pahana Book Shop Ordering System</h4>
+                    <p>A dedicated web application designed for Pahana Book Shop, allowing customers to easily browse book catalogs, seamlessly place orders, and manage their purchases online.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>bootstrap</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/-Pahana-Edu-Billing-System.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-26 125130.png" alt="HR Employee System"></div>
+                <div class="project-info">
+                    <h4>HR Employee Management</h4>
+                    <p>A secure backend web system to manage employee records, daily attendance, payroll processing, and performance evaluations efficiently.</p>
+                    <div class="tech-stack">
+                        <span>Angular</span>
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/HREmpolyeeSystem.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-26 132225.png" alt="Event Management System"></div>
+                <div class="project-info">
+                    <h4>Event Management System</h4>
+                    <p>A web-based platform for organizing events, booking tickets, and managing attendees with a user-friendly admin dashboard.</p>
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>API</span>
+                        <span>Entity Framework</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/FinalSOC.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 141053.png" alt="Cineplex Movie Theater System"></div>
+                <div class="project-info">
+                    <h4>Cineplex Movie Theater System</h4>
+                    <p>A comprehensive database-driven web application developed for 'Cineplex' Kandy. It features an interactive UI for movie listings, real-time ticket booking with search functionality, and a secure 3-tier role architecture (Admin, Staff, Customer) to efficiently manage reservations, customer feedback, and theater operations.</p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>PHPMYAdmin</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#" target="_blank"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/CineplexProject.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 122043.png" alt="Thetech Technology Company"></div>
+                <div class="project-info">
+                    <h4>Thetech Corporate Website</h4>
+                    <p>A professional corporate website built for 'Thetech' technology company to display their IT services, project portfolio, and client testimonials.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>OOP</span>
+                        
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#"><i class='bx bx-link-external'></i> Live Preview</a>
+                        <a href="https://github.com/oshadaBasnayaka/Thetech.git"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+        </div>
+    </section>
+
+</body>
+</html>

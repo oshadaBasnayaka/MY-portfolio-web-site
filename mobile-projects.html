@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Projects | Oshada Basnayake</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+  
+        .project-details-section {
+            padding: 120px 10% 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .back-btn {
+            align-self: flex-start;
+            margin-bottom: 30px;
+            color: #00eeff;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: 0.3s;
+        }
+        .back-btn:hover { transform: translateX(-5px); text-shadow: 0 0 10px #00eeff; }
+
+        .detailed-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            width: 50%;
+            max-width: 1200px;
+        }
+
+        .project-card-modern {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 238, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            transition: 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card-modern:hover {
+            transform: translateY(-15px);
+            border-color: #00eeff;
+            box-shadow: 0 15px 40px rgba(0, 238, 255, 0.2);
+        }
+
+        .project-image { width: 50%; height: 220px; overflow: hidden; background: #081b29; display: flex; justify-content: center; }
+        
+        .project-image img { width: 50%; height: 100%; object-fit: cover; transition: 0.5s ease; }
+        .project-card-modern:hover .project-image img { transform: scale(1.1); }
+
+        .project-info { padding: 25px 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .project-info h4 { color: #fff; font-size: 22px; margin-bottom: 10px; }
+        .project-info p { color: #a0aab2; font-size: 14px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; text-align: justify; }
+        
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+        .tech-stack span { font-size: 12px; color: #00eeff; background: rgba(0, 238, 255, 0.1); padding: 5px 12px; border-radius: 20px; border: 1px solid rgba(0, 238, 255, 0.3); }
+
+        .project-links-modern { display: flex; gap: 15px; }
+        .project-links-modern a { display: inline-flex; align-items: center; gap: 6px; color: #fff; font-size: 14px; text-decoration: none; transition: 0.3s; }
+        .project-links-modern a i { font-size: 18px; color: #00eeff; }
+        .project-links-modern a:hover { color: #00eeff; text-shadow: 0 0 10px rgba(0, 238, 255, 0.5); }
+    </style>
+</head>
+<body>
+
+    <section class="project-details-section">
+        
+        <a href="index.html#Project" class="back-btn"><i class='bx bx-left-arrow-alt'></i> Back to Portfolio</a>
+        
+        <h1 class="sub-title">Mobile App <span>Projects</span></h1>
+        
+        <div class="detailed-projects-grid">
+            
+            <div class="project-card-modern">
+                <div class="project-image"><img src="Screenshot 2026-03-28 133345.png" alt="CupCake Shop App"></div>
+                <div class="project-info">
+                    <h4>CupCake Shop Mobile App</h4>
+                    <p>A native Android application designed for a local cupcake shop, featuring a sweet and intuitive UI, seamless browsing of cupcake menus, user authentication, and a complete order management system.</p>
+                    <div class="tech-stack">
+                        <span>Android Studio</span>
+                        <span>Java</span>
+                        <span>XML</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links-modern">
+                        <a href="#" target="_blank"><i class='bx bx-play-circle'></i> Watch Demo</a>
+                        <a href="https://github.com/oshadaBasnayaka/Cup_Cake.git" target="_blank"><i class='bx bxl-github'></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+</html>
